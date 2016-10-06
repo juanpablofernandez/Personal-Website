@@ -1,0 +1,143 @@
+body {
+    font-family: "arial black";
+    background-image: url("background1.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000;
+    margin: 0px;
+    /*overflow: hidden;*/
+}
+body {
+    height: 100%;
+}
+
+.section {
+    height: 100%;
+    min-height: 600px;
+}
+
+.contact {
+    position: relative;
+}
+.sub_menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.sub_menu li {
+    float: right;
+}
+.sub_menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.headshot {
+    background-image: url(headshot.png);
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.headshot > div {
+    height: 100%;
+    background-color: rgba(6, 14, 23, 0.81);
+    /*background-color: rgba(205, 23, 23, 0.81);*/
+}
+
+.menu li {
+    float: left;
+    /*border-right: 1px solid #bbb;*/
+}
+
+@media screen and (max-width: 600px){
+    .menu ul li.right,
+    .menu ul li {float: none;}
+
+    .sub_menu ul li.right,
+    .sub_menu ul li {float: none;}
+}
+
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.menu li a:hover {
+    background-color: #111;
+}
+.menu li a:active {
+    background-color: #111;
+}
+
+.title {
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 4px solid #fff;
+    border-top: 4px solid #fff;
+}
+.sub_title {
+    font-size: 8px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+html {
+    height: 100%;
+}
+
+.home {
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.about{
+    background-color: #fff;
+    height: 100%;
+    margin: 0px;
+}
+.projects{
+    height: 100%;
+    background-color: #cd1717;
+    margin: 0px;
+}
+.working {
+    height: 100%;
+    background-color: #fff;
+    margin: 0px;
+}
+.contact {
+    height: 100%;
+    background-color: #cd1717;
+}
