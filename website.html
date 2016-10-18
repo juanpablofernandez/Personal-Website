@@ -28,7 +28,28 @@
         </div>
 
         <div class="section projects" id="projects">
+            <div class="section-view">
+                <div class="box-25 sos">
 
+                    <div class="name">
+                        <i href="https://itunes.apple.com/us/app/whatsmyfare/id1164006917?ls=1&mt=8"></i>
+                    </div>
+                </div>
+                <div class="box-25 fare">
+                </div>
+                <div class="box-25 weather">
+                </div>
+                <div class="box-25">
+                </div>
+                <div class="box-25">
+                </div>
+                <div class="box-25">
+                </div>
+                <div class="box-25">
+                </div>
+                <div class="box-25">
+                </div>
+            </div>
         </div>
 
         <div class="section working" id="working">
@@ -82,6 +103,20 @@
             </ul>
         </div>
 
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script>
+            $(".menu a, sub_menu a").click(function(event) {
+                $(".menu a, sub_menu a").removeClass("selected");
+                $(this).addClass("selected");
+
+                var id = $(this).attr("href");
+                console.log(id);
+                var y = $(id).offset().top;
+                $("body").stop().animate({scrollTop:y}, 500);
+
+            });
+
+        </script>
     </body>
 
 </html>

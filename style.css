@@ -11,6 +11,7 @@ body {
     height: 100%;
 }
 
+
 .section {
     height: 100%;
     min-height: 600px;
@@ -45,9 +46,11 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #000000;
+    /*background-color: rgba(#000000, 0.35);*/
     position: fixed;
     top: 0;
     width: 100%;
+    height: 50px;
 }
 
 .headshot {
@@ -97,7 +100,7 @@ body {
 }
 
 .title {
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -106,10 +109,10 @@ body {
     border-top: 4px solid #fff;
 }
 .sub_title {
-    font-size: 8px;
+    font-size: 10px;
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 69%;
     transform: translate(-50%, -50%);
 }
 html {
@@ -123,15 +126,63 @@ html {
 }
 
 .about{
+    margin-top: 100px;
     background-color: #fff;
     height: 100%;
     margin: 0px;
 }
 .projects{
     height: 100%;
-    background-color: #cd1717;
-    margin: 0px;
+    /*background-color: #cd1717;*/
+    background-color: rgba(6, 14, 23, 0.81)
+    margin: auto;
+    /*width: 960px;*/
+    position: relative;
+    /*margin-top: 50px;*/
+
 }
+.section-view {
+    /*margin-top: 50px;*/
+    position: absolute;
+    width: calc(1200px + 8em);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /*background-color: #fff;*/
+}
+
+.box-25 {
+    /*background-color: blue;*/
+    margin: 1em;
+    float: left;
+    height: 300px;
+    width: 300px;
+
+    background-size: cover;
+    border-radius: 20px;
+}
+.box-25 .name {
+    /*background-color: blue;*/
+
+    /*text-align: center;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0;
+    border-radius: 20px;*/
+}
+.sos {
+    background-image: url(sosLogo.png);
+}
+
+.fare {
+    background-image: url(whatsmyfareLogo.png);
+}
+.weather {
+    background-image: url(weatherLogo.png);
+}
+
 .working {
     height: 100%;
     background-color: #fff;
@@ -140,4 +191,8 @@ html {
 .contact {
     height: 100%;
     background-color: #cd1717;
+}
+
+.selected {
+    background-color: #111;
 }
