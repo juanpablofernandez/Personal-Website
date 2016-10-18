@@ -6,7 +6,7 @@
         <title>Juan Pablo Fernandez</title>
         <meta name="description" content="DESCRIPTION">
         <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -15,7 +15,7 @@
                 <h1>Juan Pablo Fernandez</h1>
             </div>
             <div class="sub_title">
-                <h2>#SoftwareDeveloper #iOS #Android #WebDeveloper #Athlete #Swift</h2>
+                <h2>#SoftwareDeveloper #iOS #swift #html #css #javascript</h2>
             </div>
             <div class="headshot">
                 <div>
@@ -24,6 +24,19 @@
         </div>
 
         <div class="section about" id="about">
+            <div class="info">
+                <p>
+                    I’m an international college student currently studying Computer Science at Make School in San Francisco. I was born and raised in Mexico, I first started programming during my junior year in highschool on my TI‑83 Plus. The moment I started coding was the moment I found my passion in life, from that moment on I’ve been developing my programming skills in order to reach my full potential.
+                </p>
+            </div>
+            <div class="quote">
+                <p>
+                    “Good, better, best. Never let it rest. 'Til your good is better and your better is best.”
+                </p>
+                <p>
+                    - St. Jerome
+                </p>
+            </div>
 
         </div>
 
@@ -52,22 +65,28 @@
             </div>
         </div>
 
-        <div class="section working" id="working">
+        <!-- <div class="section working" id="working">
 
-        </div>
+        </div> -->
 
         <div class="section contact" id="contact">
+            <div class="email">
+                <p>
+                    <a href="mailto:juanpablofer17@gmail.com">Click here to contact me.</a>
+
+                </p>
+            </div>
 
             <div class="sub_menu">
                 <ul>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <i class="fa fa-github" aria-hidden="true"></i>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#working">Working</a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="#projects">Projects</a>
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                     </li>
                     <li>
                         <a href="#about">About</a>
@@ -94,9 +113,9 @@
                 <li>
                     <a href="#projects">Projects</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#working">Working</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
@@ -105,8 +124,8 @@
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script>
-            $(".menu a, sub_menu a").click(function(event) {
-                $(".menu a, sub_menu a").removeClass("selected");
+            $(".menu a, .sub_menu a").click(function(event) {
+                $(".menu a, .sub_menu a").removeClass("selected");
                 $(this).addClass("selected");
 
                 var id = $(this).attr("href");

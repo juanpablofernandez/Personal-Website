@@ -25,7 +25,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #000;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -62,8 +62,8 @@ body {
 }
 .headshot > div {
     height: 100%;
-    background-color: rgba(6, 14, 23, 0.81);
-    /*background-color: rgba(205, 23, 23, 0.81);*/
+    /*background-color: rgba(6, 14, 23, 0.81);*/
+    background-color: rgba(205, 23, 23, 1);
 }
 
 .menu li {
@@ -130,11 +130,41 @@ html {
     background-color: #fff;
     height: 100%;
     margin: 0px;
+    color: black;
 }
+
+.about .info {
+    width: 960px;
+    font-size: 25px;
+    position: relative;
+    font-style: normal;
+    left: 50%;
+    top: 40%;
+    font-family: "arial";
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+
+    text-align: center;
+}
+
+.about .quote {
+    width: 960px;
+    font-size: 20px;
+    position: relative;
+    font-style: normal;
+    left: 50%;
+    top: 50%;
+    font-family: "arial";
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .projects{
     height: 100%;
     /*background-color: #cd1717;*/
-    background-color: rgba(6, 14, 23, 0.81)
+    /*background-color: rgba(6, 14, 23, 0.81)*/
+    background-color: rgba(205, 23, 23, 1);
     margin: auto;
     /*width: 960px;*/
     position: relative;
@@ -151,6 +181,8 @@ html {
 
     /*background-color: #fff;*/
 }
+
+
 
 .box-25 {
     /*background-color: blue;*/
@@ -190,9 +222,29 @@ html {
 }
 .contact {
     height: 100%;
-    background-color: #cd1717;
+    /*background-color: #cd1717;*/
+    background-color: #fff;
 }
 
+.contact .email {
+    height: 100%
+    width: 960px;
+    font-size: 40px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    font-family: "arial";
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    text-align: center;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
 .selected {
     background-color: #111;
 }
