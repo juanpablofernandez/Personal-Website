@@ -80,20 +80,23 @@
             <div class="sub_menu">
                 <ul>
                     <li>
-                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <a href="https://github.com/juanpablofernandez" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a>
+
                     </li>
                     <!-- <li>
                         <a href="#working">Working</a>
                     </li> -->
                     <li>
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        <a href="https://www.linkedin.com/in/juanpablo-fernandez" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="mailto:juanpablofer17@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#home">Home</a>
-                    </li>
+                    </li> -->
                     <li style="float:left">
                         <a>&copy; Copyright Juan Pablo Fernandez 2016</a>
                     </li>
@@ -124,8 +127,8 @@
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script>
-            $(".menu a, .sub_menu a").click(function(event) {
-                $(".menu a, .sub_menu a").removeClass("selected");
+            $(".menu a").click(function(event) {
+                $(".menu a").removeClass("selected");
                 $(this).addClass("selected");
 
                 var id = $(this).attr("href");
