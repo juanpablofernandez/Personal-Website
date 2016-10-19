@@ -1,219 +1,82 @@
-body {
-    font-family: "arial black";
-    background-image: url("background1.png");
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #000;
-    margin: 0px;
-    /*overflow: hidden;*/
-}
-body {
-    height: 100%;
-}
-
-
-.section {
-    height: 100%;
-    min-height: 600px;
-}
-
-.contact {
-    position: relative;
-}
-.sub_menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.sub_menu li {
-    float: right;
-}
-.sub_menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.sub_menu li i {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000000;
-    /*background-color: rgba(#000000, 0.35);*/
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 50px;
-}
-
-.headshot {
-    background-image: url(headshot.png);
-    height: 100%;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-}
-.headshot > div {
-    height: 100%;
-    /*background-color: rgba(6, 14, 23, 0.81);*/
-    background-color: rgba(205, 23, 23, 1);
-}
-
-.menu li {
-    float: left;
-    /*border-right: 1px solid #bbb;*/
-}
-
-@media screen and (max-width: 600px){
-    .menu ul li.right,
-    .menu ul li {float: none;}
-
-    .sub_menu ul li.right,
-    .sub_menu ul li {float: none;}
-}
-
-.menu li:last-child {
-    border-right: none;
-}
-
-.menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.menu li a:hover {
-    background-color: #111;
-}
-.menu li a:active {
-    background-color: #111;
-}
-
-.title {
-    font-size: 30px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-bottom: 4px solid #fff;
-    border-top: 4px solid #fff;
-}
-.sub_title {
-    font-size: 10px;
-    position: absolute;
-    left: 50%;
-    top: 69%;
-    transform: translate(-50%, -50%);
-}
 html {
     height: 100%;
 }
 
-.home {
-    font-size: 50px;
-    color: #ffffff;
-    text-align: center;
+body {
+    font-family: "arial black";
+    background-color: #fff;
+    margin: 0px;
+    height: 100%;
 }
 
-.about{
-    margin-top: 100px;
-    background-color: #fff;
+.section {
     height: 100%;
-    margin: 0px;
+    /*min-height: 600px;*/
+    position: relative;
+    background-color: blue;
+
+
+}
+
+.view {
+    position: absolute;
+    top: 6.5%;
+    height: 100%;
+    /*position: inherit;*/
+
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.home, #home {
+    background-color: #060e17;
+    color: white;
+    text-align: center;
+}
+.title {
+    font-size: 30px;
+    position:  absolute;
+    left: 50%;
+    top: 43.5%;
+    transform: translate(-50%, -50%);
+    border-bottom: 4px solid #fff;
+    border-top: 4px solid #fff;
+}
+
+.about, #about {
+    background-color: #fff;
     color: black;
 }
-
-.about .info {
-    width: 960px;
-    font-size: 25px;
-    position: relative;
-    font-style: normal;
-    left: 50%;
-    top: 40%;
-    font-family: "arial";
-    transform: translate(-50%, -50%);
-    border-bottom: 2px solid #000;
-    border-top: 2px solid #000;
-
-    text-align: center;
-}
-
-.about .quote {
-    width: 960px;
+.info {
     font-size: 20px;
-    position: relative;
-    font-style: normal;
+    position:  relative;
     left: 50%;
-    top: 50%;
-    font-family: "arial";
+    top: 43.5%;
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 
-.projects{
-    height: 100%;
-    /*background-color: #cd1717;*/
-    /*background-color: rgba(6, 14, 23, 0.81)*/
-    background-color: rgba(205, 23, 23, 1);
-    margin: auto;
-    /*width: 960px;*/
-    position: relative;
-    /*margin-top: 50px;*/
-
+.projects, #projects {
+    background-color: #060e17;
 }
-.section-view {
-    /*margin-top: 50px;*/
-    position: absolute;
-    width: calc(1200px + 8em);
+.boxes {
+    position:  relative;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    transform: translate(-50%, -43.5%);
 
-    /*background-color: #fff;*/
 }
-
-
 
 .box-25 {
-    /*background-color: blue;*/
     margin: 1em;
     float: left;
-    height: 300px;
-    width: 300px;
-
+    height: 225px;
+    width: 225px;
     background-size: cover;
+    border: 1px solid #fff;
     border-radius: 20px;
 }
-.box-25 .name {
-    /*background-color: blue;*/
 
-    /*text-align: center;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    bottom: 0;
-    border-radius: 20px;*/
-}
 .sos {
     background-image: url(sosLogo.png);
 }
@@ -225,36 +88,86 @@ html {
     background-image: url(weatherLogo.png);
 }
 
-.working {
-    height: 100%;
-    background-color: #fff;
-    margin: 0px;
-}
-.contact {
-    height: 100%;
-    /*background-color: #cd1717;*/
+.contact, #contact {
     background-color: #fff;
 }
-
-.contact .email {
-    height: 100%
-    width: 960px;
-    font-size: 40px;
-    position: relative;
+.contactme {
+    font-size: 70px;
+    position:  absolute;
     left: 50%;
-    top: 50%;
-    font-family: "arial";
+    top: 35%;
     transform: translate(-50%, -50%);
-    border-bottom: 2px solid #fff;
-    border-top: 2px solid #fff;
-    text-align: center;
-
 }
 
-a {
+.icons {
+
+    position:  absolute;;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+
+}
+.icons i {
+    font-size: 70px;
+    float: left;
     color: black;
+    padding: 0px 30px;
+
+}
+.icons i:hover {
+    font-size: 80px;
+}
+.icons i:active {
+    color: gray;
+}
+
+
+
+
+/*Top Menu Bar:*/
+a {
+    color: white;
     text-decoration: none;
 }
 .selected {
-    background-color: #111;
+    background-color: #fff;
+    color: #060e17;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #060e17;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6.5%;
+    min-height: 50px;
+    text-align: center;
+}
+
+.menu li {
+    /*float: left;*/
+    display: inline;
+}
+
+@media screen and (max-width: 600px){
+    .menu ul li.right,
+    .menu ul li {float: none;}
+    .sub_menu ul li.right,
+    .sub_menu ul li {float: none;}
+}
+
+.menu li a {
+    text-align: center;
+    padding: 14px 5%;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    background-color: #fff;
+    color: #060e17;
 }
