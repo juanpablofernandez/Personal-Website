@@ -49,6 +49,7 @@ body {
     color: black;
 }
 .info {
+    font-family: "arial";
     font-size: 20px;
     position:  relative;
     left: 50%;
