@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
     <head>
         <meta charset="UTF-8">
         <title>Juan Pablo Fernandez</title>
@@ -8,117 +7,65 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     </head>
-
     <body>
-
-        <div class="section" id="home">
-            <div class="home view">
-                <div class="title">
-                    <h1>Juan Pablo Fernandez</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="about">
-            <div class="about view">
-                <div class="info">
-                    <p>
-                        I’m an international college student currently studying Computer Science at Make School in San Francisco. I was born and raised in Mexico, I first started programming during my junior year in highschool on my TI‑83 Plus. The moment I started coding was the moment I found my passion in life, from that moment on I’ve been developing my programming skills in order to reach my full potential.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="projects">
-            <div class="projects view">
-                <div class="boxes">
-
-                    <a href="https://itunes.apple.com/us/app/sos-toontown/id1142731251?mt=8" target="_blank">
-                        <div class="box-25 sos">
-                            <p>
-                                SOS: Toontown
-                            </p>
-                        </div>
-                    </a>
-                    <a href="https://itunes.apple.com/us/app/whatsmyfare/id1164006917?ls=1&mt=8" target="_blank">
-                        <div class="box-25 fare">
-                            <p>
-                                WhatsMyFare
-                            </p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/juanpablofernandez/Weather" target="_blank">
-                        <div class="box-25 weather">
-                            <p>
-                                Weather App
-                            </p>
-                        </div>
-                    </a>
-                    <!-- <div class="box-25 fare">
-                    </div>
-                    <div class="box-25 weather">
-                    </div> -->
-                    <div class="box-25">
-                    </div>
-                    <div class="box-25">
-                    </div>
-                    <div class="box-25">
-                    </div>
-                    <div class="box-25">
-                    </div>
-                    <div class="box-25">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="contact">
-            <div class="contact view">
-                <div class="contactme">
-                    <p>
-                        Contact me.
-                    </p>
-                </div>
-                <div class="icons">
-                    <a href="https://github.com/juanpablofernandez" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/juanpablo-fernandez" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                    <a href="mailto:juanpablofer17@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu">
+        <div class="navbar">
             <ul>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+                <li class="logo"><a href="#home"><img src="images/logo.png" , alt="logo"></a></li>
+                <li class="link"><a class="active" href="#home">Home</a></li>
+                <li class="link"><a href="#news">About</a></li>
+                <li class="link"><a href="#contact">Projects</a></li>
+                <li class="link"><a href="#blog">Blog</a></li>
+                <li class="link"><a href="#about">Contact</a></li>
+                <li class="icons github"><a href="https://github.com/juanpablofernandez", target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li class="icons linkedin"><a href="https://www.linkedin.com/in/juanpablo-fernandez", target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li class="icons twitter"><a href="https://twitter.com/juanpablofrdz1", target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="icons facebook"><a href="https://www.facebook.com/juanpablo.rodriguez.35574", target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li class="icons email"><a href="mailto:juanpablofer17@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                <li class="icons resume"><a href="files/resume.pdf" download><i class="fa fa-file-text" aria-hidden="true"></i></a></li>
+
+
+
             </ul>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script>
-            $(".menu a").click(function(event) {
-                $(".menu a").removeClass("selected");
-                $(this).addClass("selected");
+        <div class="main">
+            <div class="title">
+                <div class="name">Juan Pablo Fernandez</div>
+                <!-- <div class="tags">#swift #ruby #python #HTML #CSS #Javascript #iOS #Web #Rails #Design</div> -->
+            </div>
 
-                var id = $(this).attr("href");
-                console.log(id);
-                var y = $(id).offset().top;
+            <div class="information">
+                <div class="about view">
+                    <div class="image">
+                        <div class="photo"></div>
+                    </div>
 
-                $("body").stop().animate({scrollTop:y}, 700);
+                    <div class="text">
+                        <p>
+                            I’m an international college student currently studying Computer Science at Make School in San Francisco. I was born and raised in Mexico, I first started programming during my junior year in highschool on my TI‑83 Plus. From that moment on I’ve been developing
+                            my programming skills in order to reach my full potential.
+                        </p>
+                    </div>
+                    <div class="projects">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="projects view">
 
-            });
+                </div>
+            </div>
 
-        </script>
+        </div>
     </body>
-
 </html>
