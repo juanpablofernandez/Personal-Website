@@ -8,7 +8,7 @@ body {
     background-attachment: fixed;
 }
 
-.main {
+.parent {
     /*background-color: #62C0E4;*/
     position: absolute;
     /*float: right;*/
@@ -17,7 +17,7 @@ body {
     height: 100%;
 }
 /* ========================================Title======================================== */
-.main .title {
+.parent .title {
     position: absolute;
     height: 25%;
     top: 0;
@@ -25,7 +25,7 @@ body {
     right: 100px;
 }
 
-.main .title .name {
+.parent .title .name {
     position: absolute;
     text-align: center;
     font-weight: bold;
@@ -38,7 +38,7 @@ body {
     top: 50%;
     transform: translate(0, -50%);
 }
-.main .title .tags {
+.parent .title .tags {
     position: absolute;
     text-align: center;
     color: white;
@@ -47,36 +47,39 @@ body {
     right: 100px;
     bottom: 40px;
 }
-/* ========================================Information View======================================== */
-.main .information {
+/* ========================================main_view View======================================== */
+.main_view {
     background-color: #fff;
     position: absolute;
     border-radius: 15px;
     top: 25%;
     left: 100px;
     right: 100px;
-    bottom: 0;
+    /*bottom: 0;*/
     box-shadow: 5px 5px 5px #000;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 50px;
 }
 
-.main .information .view {
-    height: 100%;
-    position: absolute;
+.view {
+    /*background-color: blue;
+    border: black 2px solid;*/
+    height: 575px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
 }
-
-.main .information .about {
-    /*position: absolute;*/
-    left: 50px;
-    right: 50px;
-}
-.main .information .about .image {
+/* ========================================About View======================================== */
+.about_view * {
     height: 50%;
 }
-.main .information .about .image .photo {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.about_view .image_view .photo {
     height: 250px;
     width: 250px;
     border-radius: 250px;
@@ -85,46 +88,52 @@ body {
     background-position: center;
     background-size: cover;
 }
-.main .information .about .text {
-    height: 50%;
-    bottom: 0;
-    position: absolute;
-}
-.main .information .about .text p {
-    position: relative;
+
+.about_view .text_view p {
     color: #000;
-    text-align: center;
+    text-align: justify;
     font-size: 25px;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin: 0;
 }
-
-.main .information .about .projects table {
-    bottom: -100%;
+/* ========================================Projects View======================================== */
+.projects_view table {
     height: 100%;
-    position: absolute;
     width: 100%;
+    border-spacing: 40px 40px;
 }
-.main .information .about .projects tr {
-    background-color: white;
 
-}
-.main .information .about .projects td {
-    padding: 0;
-    margin: 0;
-    /*background-color: blue;*/
-    position: relative;
+.projects_view table td {
     color: #fff;
     text-align: center;
     font-size: 25px;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin: 0;
     border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px #000;
+    transition: 300ms;
 }
 
+.projects_view table td:active {
+    box-shadow: none;
+}
 
+.projects_view table .whatsmyfare {
+    background-image: url("images/whatsmyfareLogo.png");
+}
+.projects_view table .sos {
+    background-image: url("images/sosLogo.png");
+}
+.projects_view table .weather {
+    background-image: url("images/weatherLogo.png");
+}
+/* ========================================Contact View======================================== */
+.contact_view {
+    font-size: 50px;
+    font-weight: bold;
+}
+.contact_icons a{
+    color: black;
+    font-size: 40px;
+}
 /* ========================================Navbar======================================== */
 .navbar ul {
     list-style-type: none;

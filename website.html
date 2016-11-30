@@ -11,61 +11,80 @@
         <div class="navbar">
             <ul>
                 <li class="logo"><a href="#home"><img src="images/logo.png" , alt="logo"></a></li>
-                <li class="link"><a class="active" href="#home">Home</a></li>
-                <li class="link"><a href="#news">About</a></li>
-                <li class="link"><a href="#contact">Projects</a></li>
+                <li class="link"><a href="#home">Home</a></li>
+                <li class="link"><a href="#about">About</a></li>
+                <li class="link"><a href="#projects">Projects</a></li>
                 <li class="link"><a href="#blog">Blog</a></li>
-                <li class="link"><a href="#about">Contact</a></li>
+                <li class="link"><a href="#contact">Contact</a></li>
                 <li class="icons github"><a href="https://github.com/juanpablofernandez", target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                 <li class="icons linkedin"><a href="https://www.linkedin.com/in/juanpablo-fernandez", target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 <li class="icons twitter"><a href="https://twitter.com/juanpablofrdz1", target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 <li class="icons facebook"><a href="https://www.facebook.com/juanpablo.rodriguez.35574", target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
                 <li class="icons email"><a href="mailto:juanpablofer17@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                <li class="icons resume"><a href="files/resume.pdf" download><i class="fa fa-file-text" aria-hidden="true"></i></a></li>
-
-
-
+                <!-- <li class="icons resume"><a href="files/resume.pdf" download><i class="fa fa-file-text" aria-hidden="true"></i></a></li> -->
+                <li class="icons resume"><a href="resume.html", target="_blank"><i class="fa fa-file-text" aria-hidden="true"></i></a></li>
             </ul>
         </div>
 
-        <div class="main">
+        <div class="parent" id="home">
             <div class="title">
                 <div class="name">Juan Pablo Fernandez</div>
                 <!-- <div class="tags">#swift #ruby #python #HTML #CSS #Javascript #iOS #Web #Rails #Design</div> -->
+                <!-- <embed src="files/resume.pdf" width="800px" height="2100px" /> -->
             </div>
 
-            <div class="information">
-                <div class="about view">
-                    <div class="image">
+            <div class="main_view">
+
+                <div class="about_view view" id="about">
+                    <div class="image_view">
                         <div class="photo"></div>
                     </div>
 
-                    <div class="text">
+                    <div class="text_view">
                         <p>
                             I’m an international college student currently studying Computer Science at Make School in San Francisco. I was born and raised in Mexico, I first started programming during my junior year in highschool on my TI‑83 Plus. From that moment on I’ve been developing
                             my programming skills in order to reach my full potential.
                         </p>
                     </div>
-                    <div class="projects">
-                        <table>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </table>
+                </div>
+
+                <div class="projects_view view" id="projects">
+                    <table>
+                        <tr>
+                            <td class="whatsmyfare"><a href="https://itunes.apple.com/us/app/whatsmyfare/id1164006917?ls=1&mt=8", target="_blank"></a></td>
+                            <td class="sos"><a href="https://itunes.apple.com/us/app/sos-toontown/id1142731251?mt=8", target="_blank"></a></td>
+                            <td class="weather"><a href="https://github.com/juanpablofernandez/Weather", target="_blank"></a></td>
+                        </tr>
+                        <tr>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contact_view view" id="contact">
+                    <p>Say Hello.</p>
+                    <p>juanpablofer@gmail.com</p>
+                    <div class="contact_icons">
+                        <a href="https://github.com/juanpablofernandez", target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/juanpablo-fernandez", target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/juanpablofrdz1", target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/juanpablo.rodriguez.35574", target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="mailto:juanpablofer17@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        <a href="resume.html", target="_blank"><i class="fa fa-file-text" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="projects view">
 
-                </div>
             </div>
-
         </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script>
+            $(".navbar a").click(function(event) {
+                var id = $(this).attr("href");
+                console.log(id);
+                var y = $(id).offset().top;
+                $("body").stop().animate({scrollTop:y}, 700);
+            });
+        </script>
     </body>
 </html>
